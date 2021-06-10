@@ -20,7 +20,7 @@ class PostController extends Controller
             return $posts;
         }
 
-return view('index', compact('posts'));
+        return view('index', compact('posts'));
     }
 
     /**

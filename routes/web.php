@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Post;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function (Request $request) {
+    $perPage = $request->get('per_page', 15);
+    $posts = Post::with('author')->paginate($perPage);
+    if (request()->wantsJson()) {
+        return $posts;
+    }
+
+    return view('index', compact('posts'));
 });
 
 
