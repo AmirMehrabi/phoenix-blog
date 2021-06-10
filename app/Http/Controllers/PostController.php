@@ -15,7 +15,12 @@ class PostController extends Controller
     public function index(Request $request)
     {
         $perPage = $request->get('per_page', 15);
-        return Post::with('author')->paginate($perPage);
+        $posts = Post::with('author')->paginate($perPage);
+        if (request()->wantsJson()) {
+            return $posts;
+        }
+
+return view('index', compact('posts'));
     }
 
     /**
@@ -47,7 +52,11 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        return Post::find($id);
+        $post = Post::find($id);
+        if (request()->wantsJson()) {
+            return $post;
+        }
+        return view('post', compact('post'));
     }
 
     /**
