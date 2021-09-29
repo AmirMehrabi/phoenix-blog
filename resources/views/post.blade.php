@@ -2,8 +2,8 @@
     <head>
         <meta name="viewport" content="width=device-width" />
         <meta charset="utf-8" />
-        <title>ققنوس | {{ $post->title }}</title>
-        <meta name="title" content="ققنوس" />
+        <title>هبیتا | {{ $post->title }}</title>
+        <meta name="title" content="هبیتا" />
         <link
             rel="preload"
             href="{{ asset('css/app.css') }}"
@@ -22,7 +22,7 @@
     <body class="rtl">
         <nav class="nav flex flex-wrap items-center justify-between px-4">
             <div class="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
-              <span class="font-semibold text-xl tracking-tight">ققنوس</span>
+              <span class="font-semibold text-xl tracking-tight">هبیتا</span>
             </div>
           
             <input class="menu-btn hidden" type="checkbox" id="menu-btn">
@@ -53,9 +53,9 @@
           <footer class="text-gray-600 body-font">
             <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
               <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                <span class="text-xl">وبلاگ ققنوس</span>
+                <span class="text-xl">وبلاگ هبیتا</span>
               </a>
-              <p class="text-sm text-gray-500 sm:mr-4 sm:pr-4 sm:border-r-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">متعلق به راهکارهای نرم‌افزاری ققنوس</p>
+              <p class="text-sm text-gray-500 sm:mr-4 sm:pr-4 sm:border-r-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">متعلق به راهکارهای نرم‌افزاری هبیتا</p>
               <span class="inline-flex sm:mr-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                 <a class="text-gray-500">
                   <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
